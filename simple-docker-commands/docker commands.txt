@@ -1,0 +1,35 @@
+Check if docker is properly installed
+
+docker --version
+
+docker-compose --version
+
+docker-machine --version
+
+--------------------Set the proxy---------------------
+
+docker version -> Shows the client and host version and OS
+
+docker ps -> Shows all the running containers
+
+docker images -> Shows all the images available on host
+
+docker info -> Shows all configuration related to docker
+
+docker run hello-world
+
+docker login -> Logs in to your docker hub acount
+
+docker build -t lala1989/docker-kubernetes-poc . -> Creates an image with name docker-kubernetes-poc at root folder(.)
+
+docker push lala1989/docker-kubernetes-poc -> Pushes your image to docker hub
+
+docker run -d -p 9090:8085 docker-kubernetes-poc -> Run a docker conatainer from docker-kubernetes-poc image and map 8085 port of container to 9090 of your machine
+
+docker stop {container name/id} -> stops the running container
+
+docker start {container name/id} -> Starts the container
+
+docker rm -f {container name/id} -> Stops and removes the container
+
+docker rmi -f {container id} -> remove images forcefully
